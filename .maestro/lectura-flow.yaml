@@ -1,0 +1,15 @@
+appId: host.exp.Exponent
+---
+- launchApp
+- assertVisible: 'Bienvenido'
+- tapOn: 'Entrar al sistema'
+- assertVisible: 'Inicio'
+- tapOn: 'Lecturaciones'
+- assertVisible: 'Paso 1 · Buscar medidor'
+- tapOn: 'Cédula o número de medidor'
+- inputText: 'MED-001'
+- tapOn: 'Buscar'
+- tapOn: 'Seleccionar este medidor'
+- tapOn: 'Lectura actual \(m³\)'
+- inputText: '1450'
+- tapOn: 'Guardar lectura'
